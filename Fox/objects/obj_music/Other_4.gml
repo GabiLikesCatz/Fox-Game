@@ -22,6 +22,14 @@ else if room = CityOLD or room = CityBOLD or room = City_1 or room = City_2 or r
 		audio_stop_all()
 	}
 }
+else if room = guhhhh
+{
+	if music != mu_haunted
+	{
+		music = mu_haunted
+		audio_stop_all()
+	}
+}
 else
 {
 	music = noone

@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_ufo_placeholder","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},"order":0,},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":7,},
     {"id":{"name":"spr_slope","path":"sprites/spr_slope/spr_slope.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
@@ -65,6 +66,7 @@
     {"id":{"name":"bg_sewer","path":"sprites/bg_sewer/bg_sewer.yy",},"order":9,},
     {"id":{"name":"spr_breakable","path":"sprites/spr_breakable/spr_breakable.yy",},"order":8,},
     {"id":{"name":"spr_slope2","path":"sprites/spr_slope2/spr_slope2.yy",},"order":11,},
+    {"id":{"name":"mu_haunted","path":"sounds/mu_haunted/mu_haunted.yy",},"order":17,},
     {"id":{"name":"obj_spring","path":"objects/obj_spring/obj_spring.yy",},"order":12,},
     {"id":{"name":"City_2","path":"rooms/City_2/City_2.yy",},"order":1,},
     {"id":{"name":"SewerA","path":"rooms/SewerA/SewerA.yy",},"order":1,},
@@ -165,6 +167,7 @@
     {"id":{"name":"spr_player_chainsawbump","path":"sprites/spr_player_chainsawbump/spr_player_chainsawbump.yy",},"order":2,},
     {"id":{"name":"obj_door4","path":"objects/obj_door4/obj_door4.yy",},"order":3,},
     {"id":{"name":"spr_font","path":"sprites/spr_font/spr_font.yy",},"order":0,},
+    {"id":{"name":"obj_ufo","path":"objects/obj_ufo/obj_ufo.yy",},"order":4,},
     {"id":{"name":"spr_player_attackhit3","path":"sprites/spr_player_attackhit3/spr_player_attackhit3.yy",},"order":5,},
     {"id":{"name":"sfx_enemyhit","path":"sounds/sfx_enemyhit/sfx_enemyhit.yy",},"order":4,},
     {"id":{"name":"mu_city","path":"sounds/mu_city/mu_city.yy",},"order":2,},
@@ -325,6 +328,7 @@
     {"folderPath":"folders/Sprites/level_structure/World2.yy","order":17,"resourceVersion":"1.0","name":"World2","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemies/snowy.yy","order":2,"resourceVersion":"1.0","name":"snowy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms/world 2/Mansion.yy","order":2,"resourceVersion":"1.0","name":"Mansion","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/enemies/ufo.yy","order":3,"resourceVersion":"1.0","name":"ufo","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
