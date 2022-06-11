@@ -51,6 +51,7 @@
     {"id":{"name":"spr_dasheffect","path":"sprites/spr_dasheffect/spr_dasheffect.yy",},"order":6,},
     {"id":{"name":"obj_pressenter","path":"objects/obj_pressenter/obj_pressenter.yy",},"order":9,},
     {"id":{"name":"obj_snowblock","path":"objects/obj_snowblock/obj_snowblock.yy",},"order":17,},
+    {"id":{"name":"guhhhh","path":"rooms/guhhhh/guhhhh.yy",},"order":8,},
     {"id":{"name":"spr_door2","path":"sprites/spr_door2/spr_door2.yy",},"order":13,},
     {"id":{"name":"mu_sewer","path":"sounds/mu_sewer/mu_sewer.yy",},"order":1,},
     {"id":{"name":"obj_spriteaddtest","path":"objects/obj_spriteaddtest/obj_spriteaddtest.yy",},"order":7,},
@@ -275,6 +276,7 @@
     {"roomId":{"name":"Template","path":"rooms/Template/Template.yy",},},
     {"roomId":{"name":"Freezer_2","path":"rooms/Freezer_2/Freezer_2.yy",},},
     {"roomId":{"name":"Mansion_1","path":"rooms/Mansion_1/Mansion_1.yy",},},
+    {"roomId":{"name":"guhhhh","path":"rooms/guhhhh/guhhhh.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
