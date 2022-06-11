@@ -1,0 +1,28 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_player_punch(){
+	rgb = make_color_rgb(255,150,255)
+	sprite_index = spr_player_punch
+	hsp = move * movespeed
+	if movespeed < 3
+	movespeed = 3
+	if vsp < 20
+		vsp += grav
+	if move != 0
+	{
+	if movespeed < 3
+	movespeed = 3	
+	xscale = move
+	}
+	else
+		movespeed = 0
+	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope))
+	{
+		state = 0
+		movespeed = 0
+	}
+	if  floor(image_index) = image_number - 1
+		image_speed = 0
+	else
+		image_speed = 0.6
+}

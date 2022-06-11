@@ -1,0 +1,1 @@
+global.fullseceen = !global.fullseceen
