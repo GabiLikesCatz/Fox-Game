@@ -125,6 +125,7 @@
     {"id":{"name":"spr_player_lookdoor","path":"sprites/spr_player_lookdoor/spr_player_lookdoor.yy",},"order":12,},
     {"id":{"name":"spr_platformsolid","path":"sprites/spr_platformsolid/spr_platformsolid.yy",},"order":3,},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},"order":2,},
+    {"id":{"name":"Freezer22","path":"rooms/Freezer22/Freezer22.yy",},"order":2,},
     {"id":{"name":"spr_player_attackhit","path":"sprites/spr_player_attackhit/spr_player_attackhit.yy",},"order":3,},
     {"id":{"name":"spr_demo1","path":"sprites/spr_demo1/spr_demo1.yy",},"order":2,},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"order":0,},
@@ -267,6 +268,7 @@
     {"roomId":{"name":"City_3","path":"rooms/City_3/City_3.yy",},},
     {"roomId":{"name":"Freezer","path":"rooms/Freezer/Freezer.yy",},},
     {"roomId":{"name":"Freezer_1","path":"rooms/Freezer_1/Freezer_1.yy",},},
+    {"roomId":{"name":"Freezer22","path":"rooms/Freezer22/Freezer22.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
