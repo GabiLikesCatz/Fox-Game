@@ -51,7 +51,7 @@ function scr_enemycollideplayer(){
 		instance_create_depth(x,y,depth+1,obj_hiteffect)
 		sound(sfx_enemyhit)
 	}
-	if (place_meeting(x,y,obj_player) and obj_player.state != 1 and obj_player.state != 2 and obj_player.state != 3 and obj_player.state != 5 and obj_player.state != 9 and obj_player.state != 11) and (state = 0 or state = 4)
+	if (place_meeting(x,y,obj_player) and obj_player.state != 1 and obj_player.state != 2 and obj_player.state != 3 and obj_player.state != 5 and obj_player.state != 9 and obj_player.state != 11 and obj_player.state != 10) and (state = 0 or state = 4)
 	{
 		with obj_player
 		{
@@ -80,6 +80,26 @@ function scr_enemycollideplayer(){
 		}
 	}
 	if (place_meeting(x,y,obj_player) and (obj_player.state = 11 or obj_player.state = 1) and state = 1)
+	{
+		instance_destroy()
+		with obj_player
+		{
+			global.combo += 1
+			stuncombo += 1
+			combostop = 30
+			combotime = 120
+		}
+		sound(sfx_enemyhit)
+		sound(sfx_punch)
+			repeat 6
+				instance_create_depth(x,y,depth,obj_hitstar)
+			instance_create_depth(x,y,depth,obj_hiteffect)
+			with obj_camera
+			{
+		zoom_level = clamp(zoom_level + (-2), 0, 2);
+			}
+	}
+	if (place_meeting(x,y,obj_player) and (obj_player.state = 10))
 	{
 		instance_destroy()
 		with obj_player

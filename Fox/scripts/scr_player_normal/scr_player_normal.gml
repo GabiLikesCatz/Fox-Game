@@ -100,22 +100,22 @@ function scr_player_normal(){
 			image_index = 0
 			airattack = 0
 			movespeed = 6
+			if !instance_exists(obj_dasheffect)
+			{
+				with instance_create_depth(x,y,depth+1,obj_dasheffect)
+				{
+					image_xscale = other.xscale
+					image_index = 0
+				}
+			}
 		}
 		else
 		{
-			state = 1
+			state = 11
 			image_index = 0
 			airattack = 1
-			vsp = /*-2.5*/ 0
+			vsp = /*-2.5*/ -9
 			movespeed = 6
-		}
-		if !instance_exists(obj_dasheffect)
-		{
-			with instance_create_depth(x,y,depth+1,obj_dasheffect)
-			{
-				image_xscale = other.xscale
-				image_index = 0
-			}
 		}
 		}
 		else

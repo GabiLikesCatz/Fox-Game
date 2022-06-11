@@ -25,4 +25,19 @@ function scr_player_punch(){
 		image_speed = 0
 	else
 		image_speed = 0.6
+	if k_attack
+	{
+			state = 1
+			image_index = 0
+			airattack = 1
+			movespeed = 6
+			if !instance_exists(obj_dasheffect)
+			{
+				with instance_create_depth(x,y,depth+1,obj_dasheffect)
+				{
+					image_xscale = other.xscale
+					image_index = 0
+				}
+			}	
+	}
 }
