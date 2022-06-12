@@ -8,6 +8,9 @@ function scr_player_attack(){
 		sound(sfx_dashing)
 	if !instance_exists(obj_speedlines)
 		instance_create_depth(x,y,depth,obj_speedlines)
+	/*if !instance_exists(obj_dasheffect)
+		with instance_create_depth(x,y,depth - 1,obj_dasheffect)
+			image_xscale = other.xscale*/
 	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
 	{
 	if !instance_exists(obj_walkdust)

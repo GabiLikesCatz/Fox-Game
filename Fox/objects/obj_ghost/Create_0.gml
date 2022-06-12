@@ -1,8 +1,10 @@
+image_alpha = 0.5
 hsp = 0
 vsp = 0
-grav = 0
+time = 0
+angle = 4
 state = 0
-movespeed = 1.75
-spr_walk = spr_ufo_placeholder
-spr_hit = spr_ufo_placeholder
-spr_ded = spr_ufo_placeholder
+attackbuffer = random_range(60,120)
+depth = -200
+kek_y = 0
+kek_ytarget = 1
