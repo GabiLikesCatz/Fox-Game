@@ -2,6 +2,7 @@
 -If you see this game somewhere other than itch.io or gxc please report it at gabilikescatz@gmail.com
 -Coding and spriting by GabiLikesCatz
 -Music by iplux and Shruggie and TheFungang
+-Help with coding by Thejabco(new hud,better collisions, etc...)
 
 How to use dorrs and hallways!!!!
 {

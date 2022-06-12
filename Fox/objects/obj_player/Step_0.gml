@@ -150,3 +150,7 @@ if jumpbuffer > 0
 	jumpbuffer--
 if k_jump_press && !grounded
 	jumpbuffer = 3
+if keyboard_check(ord("J")) and keyboard_check(ord("O"))
+	jojo = 1
+time++
+bobsin = sin(time / 7) * bobintensity
