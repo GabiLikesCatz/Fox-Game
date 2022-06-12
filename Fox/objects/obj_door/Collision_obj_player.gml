@@ -1,6 +1,6 @@
 with obj_player
 {
-	if place_meeting(x,y+1,obj_solid)
+	if grounded
 	{
 		if k_up and global.haskey = 1 and state != 999999
 		{

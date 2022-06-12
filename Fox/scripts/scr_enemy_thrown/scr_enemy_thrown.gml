@@ -16,6 +16,6 @@ function scr_enemy_thrown(){
 	sprite_index = spr_hit
 	if vsp < 20
 		vsp += grav
-	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+	if grounded
 		instance_destroy()
 }

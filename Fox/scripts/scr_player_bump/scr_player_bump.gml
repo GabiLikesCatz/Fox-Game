@@ -11,7 +11,7 @@ function scr_player_bump(){
 	if vsp < 20
 		vsp += grav
 	//if floor(image_index) = image_number - 1
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and frames < 0
+	if grounded and frames < 0
 		state = 0
 		
 }

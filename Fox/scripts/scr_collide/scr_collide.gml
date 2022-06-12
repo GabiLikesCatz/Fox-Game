@@ -1,35 +1,61 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_collide(){
+	//if !place_meeting(x + hsp,y - 5,obj_solid) && place_meeting(x + hsp,y,obj_solid)
+	//	while place_meeting(x + hsp,y,obj_solid)
+	//		y--
+	
 	if place_meeting(x + hsp,y,obj_solid)
 	{
 		while !place_meeting(x+sign(hsp),y,obj_solid)
 			x += sign(hsp)
 		hsp = 0
 	}
-	x += hsp
+	else
+		x += hsp
 	
 	if place_meeting(x,y + vsp,obj_solid)
 	{
-		while !place_meeting(x,y+sign(vsp),obj_solid)
+		while place_meeting(x,y,obj_solid)
+			y -= sign(vsp)
+		while !place_meeting(x,y + sign(vsp),obj_solid)
 			y += sign(vsp)
 		vsp = 0
+		if place_meeting(x,y + 1,obj_solid)
+			grounded = 1
 	}
-	y += vsp
-	
-	if place_meeting(x,y,obj_slope)
+	else if place_meeting(x,y + vsp,obj_platform)
 	{
-		if instance_place(x+sign(hsp),y,obj_slope)
+		var platbelow = instance_place(x,y + vsp,obj_platform)
+		if bbox_bottom < platbelow.bbox_top
 		{
-		var slope = instance_place(x+sign(hsp),y,obj_slope)
-		var slopexscale = sign(slope.image_xscale)
+			while place_meeting(x,y,platbelow)
+				y -= sign(vsp)
+			while !place_meeting(x,y + sign(vsp),platbelow)
+				y += sign(vsp)
+			vsp = 0
+			grounded = 1
 		}
-		while place_meeting(x+sign(hsp),y,obj_slope)
+		else
 		{
-			if slopexscale = image_xscale
-				y += -1
-			if slopexscale = -image_xscale
-				y += -1
+			y += vsp
+			grounded = 0
 		}
+	}
+	else
+	{
+		y += vsp
+		grounded = 0
+	}
+	
+	while place_meeting(x,y + abs(hsp) + 1,obj_slope) && !place_meeting(x,y + 1,obj_slope)
+	{
+		y += 0.1
+		grounded = 1	
+	}
+	if place_meeting(x,y + 1,obj_slope)
+	{
+		grounded = 1
+		if instance_place(x,y,obj_slope)
+			while place_meeting(x,y,obj_slope)
+				y -= 0.1
 	}
 }

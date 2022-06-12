@@ -8,7 +8,7 @@ function scr_player_attack(){
 		sound(sfx_dashing)
 	if !instance_exists(obj_speedlines)
 		instance_create_depth(x,y,depth,obj_speedlines)
-	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+	if grounded
 	{
 	if !instance_exists(obj_walkdust)
 	{
@@ -42,7 +42,7 @@ function scr_player_attack(){
 	sprite_index = spr_player_shoulderbash
 	image_speed = 0.35
 	hsp = movespeed * xscale
-	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+	if grounded
 	{
 		if movespeed < 10
 		movespeed += 0.25
@@ -58,16 +58,19 @@ function scr_player_attack(){
 	}
 	if vsp < 20
 		vsp += grav
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and airattack = 1
+	if grounded and airattack = 1
 		state = 0
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and k_jump
+	if grounded and (k_jump_press || jumpbuffer > 0)
 	{
 		airattack = 1
 		vsp = -11
 		state = 10
 		image_index = 0
-		sound(sfx_jump)
+		if !playedjump
+			sound(sfx_jump)
+		playedjump = 1
 		sprite_index = spr_player_slidejump
+		jumpbuffer = 0
 	}
 	if place_meeting(x+xscale,y,obj_solid)
 	{
@@ -90,7 +93,7 @@ function scr_player_attack(){
 			vsp = -11
 		}
 	}*/
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and k_down
+	if grounded and k_down
 	{
 		state = 10
 		vsp = 0

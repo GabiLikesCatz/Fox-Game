@@ -28,16 +28,19 @@ function scr_player_chainsaw(){
 				sprite_index = spr_player_chainsawbump
 				vsp = -5.5
 			}
-			if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+			if grounded
 			{
-				if k_jump
+				if k_jump_press || jumpbuffer > 0
+				{
 					vsp = -7
+					jumpbuffer = 0	
+				}
 			}
 	}
 	if sprite_index = spr_player_chainsawbump
 	{
 		hsp = -xscale * movespeed
-		if movespeed > 0 and (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope))
+		if movespeed > 0 and grounded
 			movespeed -= 1
 		if movespeed = 0 or movespeed < 0
 		{

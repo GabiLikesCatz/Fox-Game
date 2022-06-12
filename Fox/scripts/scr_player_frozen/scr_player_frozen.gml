@@ -27,10 +27,13 @@ function scr_player_frozen(){
 				instance_create_depth(x,y,depth,obj_hitstar)
 			sound(sfx_bump)
 		}
-		if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and k_jump
+		if grounded and (k_jump_press || jumpbuffer > 0)
 		{
 			vsp = -9
-			sound(sfx_jump)
+			if !playedjump
+				sound(sfx_jump)
+			playedjump = 1
+			jumpbuffer = 0
 		}
 	}
 	if frozenhit = 1
