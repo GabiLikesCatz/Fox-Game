@@ -9,8 +9,7 @@ function scr_collide(){
 			x += sign(hsp)
 		hsp = 0
 	}
-	else
-		x += hsp
+	x += hsp
 	
 	if place_meeting(x,y + vsp,obj_solid)
 	{

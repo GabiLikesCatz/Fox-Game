@@ -63,7 +63,7 @@ function scr_player_attack(){
 		vsp += grav
 	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and airattack = 1
 		state = 0
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and k_jump
+	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and k_jump_press
 	{
 		airattack = 1
 		vsp = -11

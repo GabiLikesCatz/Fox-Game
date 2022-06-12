@@ -95,7 +95,6 @@
     {"id":{"name":"obj_collectloss","path":"objects/obj_collectloss/obj_collectloss.yy",},"order":8,},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},"order":2,},
     {"id":{"name":"spr_player_groundpound","path":"sprites/spr_player_groundpound/spr_player_groundpound.yy",},"order":19,},
-    {"id":{"name":"scr_collideenemy","path":"scripts/scr_collideenemy/scr_collideenemy.yy",},"order":5,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":0,},
     {"id":{"name":"sfx_door","path":"sounds/sfx_door/sfx_door.yy",},"order":13,},
     {"id":{"name":"scr_player_chainsaw","path":"scripts/scr_player_chainsaw/scr_player_chainsaw.yy",},"order":9,},
