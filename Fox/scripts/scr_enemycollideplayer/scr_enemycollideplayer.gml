@@ -85,8 +85,8 @@ function scr_enemycollideplayer(){
 			stuncombo += 1
 			combostop = 30
 			combotime = 120
-			hitX = x
-			hitY = y
+			hitX = 0
+			hitY = 0
 			hitbuffer = 11
 			state = 2
 			//camera_set_view_size(view_camera[0],900,500)
@@ -114,8 +114,8 @@ function scr_enemycollideplayer(){
 			stuncombo += 1
 			combostop = 30
 			combotime = 120
-			hitX = x
-			hitY = y
+			hitX = 0
+			hitY = 0
 			hitbuffer = 11
 			state = 2
 			//camera_set_view_size(view_camera[0],900,500)
