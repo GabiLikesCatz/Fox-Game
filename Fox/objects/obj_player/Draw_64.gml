@@ -2,10 +2,10 @@ if global.drawhud
 {
 	draw_set_font(collect_font)
 	collectstring = (string("SCORE X ") + string(global.collect))
-	collectstringw = string_width(collectstring)
-	draw_text(20,20,collectstring)
+	// collectstringw = string_width(collectstring)
+	draw_text(40, 32.5, collectstring)
 	combostring = (string("COMBO X ") + string(global.combo))
-	combostringw = string_width(combostring)
+	// combostringw = string_width(combostring)
 	if combotime < 15
 		comboshakew = random_range(-2,2)
 	else
@@ -21,6 +21,6 @@ if global.drawhud
 		else
 			combotextoffset_target = -500
 		combotextoffset = lerp(combotextoffset,combotextoffset_target,0.1)
-		draw_text(20 + comboshakew + combotextoffset + combosin,70 + comboshakeh,combostring)
-		draw_healthbar(30 + string_width(combostring) + comboshakew + combotextoffset + combosin,65 + comboshakeh,180 + string_width(combostring) + comboshakew + combotextoffset + combosin,75 + comboshakeh,combotime,c_black,c_white,c_white,0,1,1)
+		draw_text(40 + comboshakew + combotextoffset + combosin, 80 + comboshakeh,combostring)
+		draw_healthbar(50 + string_width(combostring) + comboshakew + combotextoffset + combosin, 80 + comboshakeh,180 + string_width(combostring) + comboshakew + combotextoffset + combosin,75 + comboshakeh,combotime,c_black,c_white,c_white,0,1,1)
 }
