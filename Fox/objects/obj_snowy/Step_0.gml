@@ -23,4 +23,4 @@ if state != 1
 	else
 		movespeed = 2.5
 }
-scr_collideenemy()
+scr_collide()

@@ -10,7 +10,7 @@ function scr_player_normal(){
 		vsp += grav
 	if move != 0
 		xscale = move
-	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+	if grounded
 	{
 		if move != 0
 		{
@@ -38,11 +38,14 @@ function scr_player_normal(){
 			sprite_index = spr_player_hurtidle
 			movespeed = 0
 		}
-		if k_jump
+		if (k_jump_press || jumpbuffer > 0)
 		{
 			vsp = -11
 			image_index = 0
-			sound(sfx_jump)
+			if !playedjump
+				sound(sfx_jump)
+			playedjump = 1
+			jumpbuffer = 0
 		}
 	}
 	else
@@ -73,7 +76,7 @@ function scr_player_normal(){
 		sound(sfx_dash)
 		if attackstyle = "OLD"
 		{
-		if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+		if grounded
 		{
 			if attackstyle = "OLD"
 			sprite_index = spr_player_attack
@@ -94,7 +97,7 @@ function scr_player_normal(){
 		{
 		if !k_up
 		{
-		if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+		if grounded
 		{
 			state = 1
 			image_index = 0
@@ -130,10 +133,10 @@ function scr_player_normal(){
 		{
 			state = 11
 			movespeed = 0
-			if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope))
-			vsp = -14
+			if grounded
+				vsp = -14
 			else
-			vsp = -9
+				vsp = -9
 		}
 		}
 	}

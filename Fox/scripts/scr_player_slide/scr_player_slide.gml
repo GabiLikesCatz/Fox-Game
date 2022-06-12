@@ -5,7 +5,7 @@ function scr_player_slide(){
 	image_speed = 0
 	else
 	image_speed = 0.45
-	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+	if grounded
 	sprite_index = spr_player_slide
 	else
 	if sprite_index != spr_player_slidejump

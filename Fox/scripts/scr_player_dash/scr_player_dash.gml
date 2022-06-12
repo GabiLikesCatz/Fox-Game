@@ -3,7 +3,7 @@
 function scr_player_dash(){
 	hsp = movespeed * xscale
 	move = k_left + k_right
-	if movespeed < 0 and (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope))
+	if movespeed < 0 and grounded
 		movespeed = 0
 	image_speed = 0.35
 	if vsp < 20
@@ -14,7 +14,7 @@ function scr_player_dash(){
 			movespeed += 0.1
 		sprite_index = spr_player_dash
 	}
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and sprite_index != spr_player_dashstop
+	if grounded and sprite_index != spr_player_dashstop
 	{
 		if move = -xscale
 		{
@@ -40,8 +40,11 @@ function scr_player_dash(){
 				state = 0
 		}
 	}
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and k_jump
+	if grounded and (k_jump_press || jumpbuffer > 0)
+	{
 		vsp = -11
+		jumpbuffer = 0	
+	}
 	if place_meeting(x+xscale,y,obj_solid)
 	{
 		state = 3
