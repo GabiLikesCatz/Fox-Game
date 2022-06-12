@@ -8,6 +8,7 @@ function scr_snowy_idle(){
 		vsp = -14
 		image_xscale = sign(obj_player.x)
 		sound(sfx_jump)
+		playedjump = 1
 		sound(sfx_dash)
 	}
 }

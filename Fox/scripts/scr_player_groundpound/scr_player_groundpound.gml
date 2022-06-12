@@ -11,7 +11,7 @@ function scr_player_groundpound(){
 	movespeed = 3
 	if move != 0
 		xscale = move
-	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+	if grounded
 	{
 		state = 3
 		vsp = -(groundpoundsmash / 1.5)

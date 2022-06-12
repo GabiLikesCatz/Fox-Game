@@ -3,7 +3,8 @@
 function scr_input(){
 	k_left = -keyboard_check(vk_left)
 	k_right = keyboard_check(vk_right)
-	k_jump = keyboard_check(ord("Z")) or keyboard_check(ord("Y")) 
+	k_jump_press = keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("Y")) 
+	k_jump_release = keyboard_check_released(ord("Z")) || keyboard_check_released(ord("Y"))
 	k_attack = keyboard_check_pressed(ord("X"))
 	k_up = keyboard_check(vk_up)
 	k_up2 = keyboard_check_pressed(vk_up)
