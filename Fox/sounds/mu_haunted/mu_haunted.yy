@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_haunted.mp3",
-  "duration": 73.900375,
+  "soundFile": "mu_haunted",
+  "duration": 0.0,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

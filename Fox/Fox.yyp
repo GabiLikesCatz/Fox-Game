@@ -122,6 +122,7 @@
     {"id":{"name":"sfx_hurt","path":"sounds/sfx_hurt/sfx_hurt.yy",},"order":10,},
     {"id":{"name":"obj_breakableSkull","path":"objects/obj_breakableSkull/obj_breakableSkull.yy",},"order":3,},
     {"id":{"name":"spr_player_chainsawstart","path":"sprites/spr_player_chainsawstart/spr_player_chainsawstart.yy",},"order":0,},
+    {"id":{"name":"mu_haunted","path":"sounds/mu_haunted/mu_haunted.yy",},"order":17,},
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},"order":11,},
     {"id":{"name":"tile_forest","path":"sprites/tile_forest/tile_forest.yy",},"order":7,},
     {"id":{"name":"scr_player_normal","path":"scripts/scr_player_normal/scr_player_normal.yy",},"order":0,},
