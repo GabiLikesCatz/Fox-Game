@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_city.mp3",
-  "duration": 32.1828575,
+  "duration": 32.182858,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
