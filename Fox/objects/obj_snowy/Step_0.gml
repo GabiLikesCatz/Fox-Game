@@ -23,4 +23,5 @@ if state != 1
 	else
 		movespeed = 2.5
 }
+if state != 2
 scr_collide()

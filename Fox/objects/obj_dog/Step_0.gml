@@ -18,8 +18,4 @@ if state != 1
 		movespeed = 2.5
 }
 if state != 2
-{
-	hitX = 0
-	hitY = 0
-}
 scr_collide()

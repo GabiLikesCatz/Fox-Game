@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_haunted.mp3",
-  "duration": 73.900375,
+  "duration": 59.115063,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
