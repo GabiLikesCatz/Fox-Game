@@ -16,7 +16,7 @@ function scr_player_punch(){
 	}
 	else
 		movespeed = 0
-	if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope))
+	if grounded
 	{
 		state = 0
 		movespeed = 0

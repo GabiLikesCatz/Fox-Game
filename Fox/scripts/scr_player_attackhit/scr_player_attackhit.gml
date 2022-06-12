@@ -12,10 +12,9 @@ function scr_player_attackhit(){
 	image_speed = 0
 	hsp = 0
 	vsp = 0
-	x = (hitX + random_range(-4, 4))
-	y = (hitY + random_range(-4, 4))
-	if sprite_index != spr_player_hitstun and sprite_index != spr_player_kick
-	sprite_index = choose(spr_player_hitstun,spr_player_kick)
+	x = hitX
+	y = hitY
+	sprite_index = spr_player_hitstun
 	hitbuffer--
 	if hitbuffer < 0
 	{
