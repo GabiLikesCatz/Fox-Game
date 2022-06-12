@@ -59,9 +59,6 @@ function scr_enemycollideplayer(){
 			{
 			frames = 3
 			invframes = 20
-			if global.hardmode != 1
-				vsp = -5
-			else
 				vsp = -11
 			//xscale *= -1
 			state = 3
@@ -88,6 +85,15 @@ function scr_enemycollideplayer(){
 			stuncombo += 1
 			combostop = 30
 			combotime = 120
+			hitX = 0
+			hitY = 0
+			hitbuffer = 11
+			state = 2
+			//camera_set_view_size(view_camera[0],900,500)
+			//sprite_index = choose(spr_player_attackhit,spr_player_attackhit2)
+			image_index = random_range(0,3)
+			image_index = random_range(0,3)
+			chainsaw = 0
 		}
 		sound(sfx_enemyhit)
 		sound(sfx_punch)
@@ -108,6 +114,15 @@ function scr_enemycollideplayer(){
 			stuncombo += 1
 			combostop = 30
 			combotime = 120
+			hitX = 0
+			hitY = 0
+			hitbuffer = 11
+			state = 2
+			//camera_set_view_size(view_camera[0],900,500)
+			//sprite_index = choose(spr_player_attackhit,spr_player_attackhit2)
+			image_index = random_range(0,3)
+			image_index = random_range(0,3)
+			chainsaw = 0
 		}
 		sound(sfx_enemyhit)
 		sound(sfx_punch)

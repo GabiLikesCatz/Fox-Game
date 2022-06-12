@@ -112,6 +112,8 @@ if state != 2
 {
 	global.targetwidth = 960
 	global.targetheight = 540	
+	hitX = 0
+	hitY = 0
 }
 if global.collect < 0
 	global.collect = 0

@@ -31,6 +31,7 @@ function scr_player_punch(){
 			image_index = 0
 			airattack = 1
 			movespeed = 6
+			vsp = -7
 			if !instance_exists(obj_dasheffect)
 			{
 				with instance_create_depth(x,y,depth+1,obj_dasheffect)

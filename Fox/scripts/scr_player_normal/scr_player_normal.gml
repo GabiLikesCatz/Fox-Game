@@ -114,11 +114,19 @@ function scr_player_normal(){
 		}
 		else
 		{
-			state = 11
+			state = 1
 			image_index = 0
 			airattack = 1
-			vsp = /*-2.5*/ -9
 			movespeed = 6
+			vsp = 0
+			if !instance_exists(obj_dasheffect)
+			{
+				with instance_create_depth(x,y,depth+1,obj_dasheffect)
+				{
+					image_xscale = other.xscale
+					image_index = 0
+				}
+			}
 		}
 		}
 		else
