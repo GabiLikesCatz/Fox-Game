@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ufo_placeholder",
-    "path": "sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",
+    "name": "spr_ghost_placeholder",
+    "path": "sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",
   },
   "solid": false,
   "visible": true,
@@ -39,7 +39,7 @@
     "path": "folders/Objects/level_structure/enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_ufo",
+  "name": "obj_ghost",
   "tags": [],
   "resourceType": "GMObject",
 }

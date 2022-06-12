@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},"LayerId":{"name":"cfbf611e-704b-4d56-9d14-2bca538836ac","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ufo_placeholder","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},"resourceVersion":"1.0","name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","path":"sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","path":"sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",},"LayerId":{"name":"cfbf611e-704b-4d56-9d14-2bca538836ac","path":"sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ghost_placeholder","path":"sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",},"resourceVersion":"1.0","name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ufo_placeholder","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},
+    "spriteId": {"name":"spr_ghost_placeholder","path":"sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"514898bc-5a9f-4d3c-8281-3e95950fe7da","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"514898bc-5a9f-4d3c-8281-3e95950fe7da","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07cbca28-8c77-4ac8-99b8-0a073af2a9a8","path":"sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ufo_placeholder","path":"sprites/spr_ufo_placeholder/spr_ufo_placeholder.yy",},
+    "parent": {"name":"spr_ghost_placeholder","path":"sprites/spr_ghost_placeholder/spr_ghost_placeholder.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_ufo_placeholder",
+    "name": "spr_ghost_placeholder",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ufo",
-    "path": "folders/Sprites/enemies/ufo.yy",
+    "name": "ghost",
+    "path": "folders/Sprites/enemies/ghost.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_ufo_placeholder",
+  "name": "spr_ghost_placeholder",
   "tags": [],
   "resourceType": "GMSprite",
 }
