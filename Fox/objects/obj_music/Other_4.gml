@@ -24,9 +24,9 @@ else if room = CityOLD or room = CityBOLD or room = City_1 or room = City_2 or r
 }
 else if room = Mansion_1 or room = Mansion_2
 {
-	if music != mu_haunted
+	if music != mu_mansion
 	{
-		music = mu_haunted
+		music = mu_mansion
 		audio_stop_all()
 	}
 }

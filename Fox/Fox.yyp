@@ -18,6 +18,7 @@
     {"id":{"name":"tileset_sewer","path":"tilesets/tileset_sewer/tileset_sewer.yy",},"order":1,},
     {"id":{"name":"scr_player_ramp","path":"scripts/scr_player_ramp/scr_player_ramp.yy",},"order":7,},
     {"id":{"name":"scr_utilities","path":"scripts/scr_utilities/scr_utilities.yy",},"order":4,},
+    {"id":{"name":"mu_mansion","path":"sounds/mu_mansion/mu_mansion.yy",},"order":17,},
     {"id":{"name":"spr_player_attackair","path":"sprites/spr_player_attackair/spr_player_attackair.yy",},"order":1,},
     {"id":{"name":"spr_slidesign","path":"sprites/spr_slidesign/spr_slidesign.yy",},"order":18,},
     {"id":{"name":"obj_hallway","path":"objects/obj_hallway/obj_hallway.yy",},"order":5,},
