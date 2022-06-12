@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_enemy_hitstun(){
 	stunbuffer--
-	x = hitX
-	y = hitY
+	hitX = random_range(-4,4)
+	hitY = random_range(-4,4)
 	hsp = 0
 	vsp = 0
 	sprite_index = spr_hit
@@ -11,7 +11,7 @@ function scr_enemy_hitstun(){
 	{
 		if stunbuffer < 0
 		{
-			y = hitY - 7
+			y -= 7
 			vsp = -14
 			movespeed = 12
 			image_xscale = obj_player.xscale
@@ -24,7 +24,7 @@ function scr_enemy_hitstun(){
 		{
 			/*image_xscale = obj_player.xscale
 			instance_destroy()*/
-			y = hitY - 7
+			y -= 7
 			vsp = -14
 			movespeed = 12
 			image_xscale = obj_player.xscale
