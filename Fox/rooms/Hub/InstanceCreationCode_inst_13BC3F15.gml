@@ -1,2 +1,2 @@
-targetRoom = Room1
+targetRoom = Sky
 targetDoor = 1
