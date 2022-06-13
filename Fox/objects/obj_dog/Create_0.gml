@@ -6,3 +6,5 @@ movespeed = 1.5
 spr_walk = spr_dog_walk
 spr_hit = spr_dog_hit
 spr_ded = spr_dog_dead
+hitY = y
+hitX = x

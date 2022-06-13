@@ -4,7 +4,7 @@ function scr_enemycollideplayer(){
 	if place_meeting(x,y,obj_player) and (obj_player.state = 1 or obj_player.state = 5 or obj_player.state = 9 or obj_player.state = 11) and (state = 0 or state = 4)/* and state != 1*/ 
 	{
 		hitX = x
-		hitY = y - 1
+		hitY = y
 		stunbuffer = 11
 		state = 2
 		with obj_player
@@ -29,8 +29,8 @@ function scr_enemycollideplayer(){
 			}
 			else
 			{
-			hitX = x + -(image_xscale*16)
-			hitY = y - 1
+			hitX = x
+			hitY = y
 			hitbuffer = 3
 			state = 2
 			baddieid = other.id
@@ -85,8 +85,8 @@ function scr_enemycollideplayer(){
 			stuncombo += 1
 			combostop = 30
 			combotime = 120
-			hitX = 0
-			hitY = 0
+			hitX = x
+			hitY = y
 			hitbuffer = 11
 			state = 2
 			//camera_set_view_size(view_camera[0],900,500)
@@ -114,8 +114,8 @@ function scr_enemycollideplayer(){
 			stuncombo += 1
 			combostop = 30
 			combotime = 120
-			hitX = 0
-			hitY = 0
+			hitX = x
+			hitY = x
 			hitbuffer = 11
 			state = 2
 			//camera_set_view_size(view_camera[0],900,500)
