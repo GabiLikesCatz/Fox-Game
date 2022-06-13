@@ -115,7 +115,7 @@ function scr_enemycollideplayer(){
 			combostop = 30
 			combotime = 120
 			hitX = x
-			hitY = x
+			hitY = y
 			hitbuffer = 11
 			state = 2
 			//camera_set_view_size(view_camera[0],900,500)
