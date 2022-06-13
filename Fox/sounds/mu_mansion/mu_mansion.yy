@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_haunted.mp3",
+  "soundFile": "mu_mansion.mp3",
   "duration": 59.115063,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mu_haunted",
+  "name": "mu_mansion",
   "tags": [],
   "resourceType": "GMSound",
 }
