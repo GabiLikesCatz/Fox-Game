@@ -1,4 +1,12 @@
-if room = Forest_1 or room = Forest_2 or room = Forest_3 or room = Forest
+if room = Hub or room = Hub2 or room = TitleReale or room = Title
+{
+	if music != mu_hub
+	{
+		music = mu_hub
+		audio_stop_all()
+	}
+}
+else if room = Forest_1 or room = Forest_2 or room = Forest_3 or room = Forest
 {
 	if music != mu_forest
 	{

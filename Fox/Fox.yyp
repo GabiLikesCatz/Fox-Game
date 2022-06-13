@@ -99,6 +99,7 @@
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":0,},
     {"id":{"name":"sfx_door","path":"sounds/sfx_door/sfx_door.yy",},"order":13,},
     {"id":{"name":"scr_player_chainsaw","path":"scripts/scr_player_chainsaw/scr_player_chainsaw.yy",},"order":9,},
+    {"id":{"name":"Mansion_3","path":"rooms/Mansion_3/Mansion_3.yy",},"order":2,},
     {"id":{"name":"spr_door3","path":"sprites/spr_door3/spr_door3.yy",},"order":14,},
     {"id":{"name":"spr_foxHUD_hurt","path":"sprites/spr_foxHUD_hurt/spr_foxHUD_hurt.yy",},"order":2,},
     {"id":{"name":"scr_player_slide","path":"scripts/scr_player_slide/scr_player_slide.yy",},"order":10,},
@@ -108,6 +109,7 @@
     {"id":{"name":"spr_player_dashstop","path":"sprites/spr_player_dashstop/spr_player_dashstop.yy",},"order":16,},
     {"id":{"name":"spr_dog_mask","path":"sprites/spr_dog_mask/spr_dog_mask.yy",},"order":1,},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},"order":6,},
+    {"id":{"name":"mu_hub","path":"sounds/mu_hub/mu_hub.yy",},"order":18,},
     {"id":{"name":"obj_10","path":"objects/obj_10/obj_10.yy",},"order":1,},
     {"id":{"name":"scr_player_attackhit","path":"scripts/scr_player_attackhit/scr_player_attackhit.yy",},"order":2,},
     {"id":{"name":"sfx_break","path":"sounds/sfx_break/sfx_break.yy",},"order":6,},
@@ -294,6 +296,7 @@
     {"roomId":{"name":"Mansion_1","path":"rooms/Mansion_1/Mansion_1.yy",},},
     {"roomId":{"name":"Hub2","path":"rooms/Hub2/Hub2.yy",},},
     {"roomId":{"name":"Mansion_2","path":"rooms/Mansion_2/Mansion_2.yy",},},
+    {"roomId":{"name":"Mansion_3","path":"rooms/Mansion_3/Mansion_3.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
