@@ -55,6 +55,7 @@
     {"id":{"name":"spr_player_bump","path":"sprites/spr_player_bump/spr_player_bump.yy",},"order":23,},
     {"id":{"name":"spr_ghost_dead","path":"sprites/spr_ghost_dead/spr_ghost_dead.yy",},"order":4,},
     {"id":{"name":"spr_foxHUD_happy","path":"sprites/spr_foxHUD_happy/spr_foxHUD_happy.yy",},"order":3,},
+    {"id":{"name":"scr_errorHandler","path":"scripts/scr_errorHandler/scr_errorHandler.yy",},"order":9,},
     {"id":{"name":"spr_dasheffect","path":"sprites/spr_dasheffect/spr_dasheffect.yy",},"order":6,},
     {"id":{"name":"obj_pressenter","path":"objects/obj_pressenter/obj_pressenter.yy",},"order":9,},
     {"id":{"name":"obj_snowblock","path":"objects/obj_snowblock/obj_snowblock.yy",},"order":18,},
