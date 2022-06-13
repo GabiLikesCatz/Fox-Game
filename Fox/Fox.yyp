@@ -109,6 +109,7 @@
     {"id":{"name":"spr_player_dashstop","path":"sprites/spr_player_dashstop/spr_player_dashstop.yy",},"order":16,},
     {"id":{"name":"spr_dog_mask","path":"sprites/spr_dog_mask/spr_dog_mask.yy",},"order":1,},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},"order":6,},
+    {"id":{"name":"mu_hub","path":"sounds/mu_hub/mu_hub.yy",},"order":18,},
     {"id":{"name":"obj_10","path":"objects/obj_10/obj_10.yy",},"order":1,},
     {"id":{"name":"scr_player_attackhit","path":"scripts/scr_player_attackhit/scr_player_attackhit.yy",},"order":2,},
     {"id":{"name":"sfx_break","path":"sounds/sfx_break/sfx_break.yy",},"order":6,},
