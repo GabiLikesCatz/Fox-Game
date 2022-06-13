@@ -68,3 +68,5 @@ switch state
 		visible = 1
 	break
 }
+if obj_player.state = 999999
+	instance_destroy()
