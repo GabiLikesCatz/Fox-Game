@@ -37,5 +37,8 @@ combosintime = 0
 combosin = 0
 playedjump = 0
 jumpbuffer = 0
-
+jojo = 0
+bobsin = 0
+time = irandom_range(0,500)
+bobintensity = random_range(3,5)
 collect_font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890", true, 2);

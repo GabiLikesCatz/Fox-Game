@@ -19,7 +19,7 @@ function scr_player_frozen(){
 			if movespeed = 0
 				xscale *= -1
 		}
-		if place_meeting(x+xscale,y,obj_solid)
+		if place_meeting(x+xscale,y,obj_solid) or place_meeting(x+xscale,y,obj_platform)
 		{
 			vsp = -11
 			frozenhit = 1
@@ -39,7 +39,7 @@ function scr_player_frozen(){
 	if frozenhit = 1
 	{
 		hsp = 0	
-		if place_meeting(x,y+1,obj_solid)
+		if place_meeting(x,y+1,obj_solid) or place_meeting(x+xscale,y,obj_platform)
 		{
 			state = 3
 			vsp = -7

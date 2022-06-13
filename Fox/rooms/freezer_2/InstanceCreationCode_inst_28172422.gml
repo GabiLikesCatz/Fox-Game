@@ -1,1 +1,1 @@
-targetRoom = Freezer_2
+targetRoom = Freezer_1

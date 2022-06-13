@@ -12,9 +12,10 @@ function scr_player_attackhit(){
 	image_speed = 0
 	hsp = 0
 	vsp = 0
-	//x = hitX
-	//y = hitY
-	sprite_index = spr_player_hitstun
+	x = hitX - random_range(-4,4)
+	y = hitY - random_range(-4,4)
+	if sprite_index != spr_player_hitstun and sprite_index != spr_player_kick
+	sprite_index = choose(spr_player_hitstun,spr_player_kick)
 	hitbuffer--
 	if hitbuffer < 0
 	{
@@ -26,16 +27,16 @@ function scr_player_attackhit(){
 			vsp = -5
 			movespeed = movespeed / 2*/
 			state = 0
-			//x = hitX
-			//y = hitY
+			x = hitX
+			y = hitY
 			if !place_meeting(x,y+1,obj_solid) and !place_meeting(x,y+1,obj_slope)
 				vsp = -2.5
 		}
 		else
 		{
 			state = 0
-			//x = hitX
-			//y = hitY
+			x = hitX
+			y = hitY
 			with baddieid
 			{
 				if other.storedstate = 1

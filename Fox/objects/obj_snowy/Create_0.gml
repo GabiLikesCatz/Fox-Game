@@ -8,3 +8,5 @@ spr_hit = spr_snowy_hit
 spr_ded = spr_snow
 spr_idle = spr_snowy_idle
 spr_jump = spr_snowy_jump
+hitX = x
+hitY = y

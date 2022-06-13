@@ -53,7 +53,7 @@ switch state
 if state != 3
 invframes -= 0.25
 frames -= 0.1
-if state != 999999
+if state != 999999 and state != 2
 	scr_collide()
 if state != 10
 	mask_index = spr_player_mask
@@ -152,3 +152,7 @@ if jumpbuffer > 0
 	jumpbuffer--
 if k_jump_press && !grounded
 	jumpbuffer = 3
+if keyboard_check(ord("J")) and keyboard_check(ord("O"))
+	jojo = 1
+time++
+bobsin = sin(time / 7) * bobintensity

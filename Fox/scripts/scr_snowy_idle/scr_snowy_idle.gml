@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_snowy_idle(){
 	sprite_index = spr_idle
+	hsp = 0
 	if place_meeting(x+100,y,obj_player) or place_meeting(x-100,y,obj_player)
 	{
 		state = 4

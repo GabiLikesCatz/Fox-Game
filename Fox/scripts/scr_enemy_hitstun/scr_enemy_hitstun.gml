@@ -2,10 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_enemy_hitstun(){
 	stunbuffer--
-	hitX = random_range(-4,4)
-	hitY = random_range(-4,4)
-	hsp = 0
-	vsp = 0
+	x = hitX
+	y = hitY
 	sprite_index = spr_hit
 	if obj_player.attackstyle = "OLD"
 	{
