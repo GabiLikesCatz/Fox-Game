@@ -53,7 +53,7 @@ switch state
 if state != 3
 invframes -= 0.25
 frames -= 0.1
-if state != 999999 and state != 2
+if state != 999999 and state != 2 and state != 8
 	scr_collide()
 if state != 10
 	mask_index = spr_player_mask
@@ -100,33 +100,8 @@ if state != 5
 	runstop = 0
 //with all
 //	image_blend = choose(make_color_rgb(0,150,255),make_color_rgb(150,150,255),make_color_rgb(150,0,255))
-if place_meeting(x,y+1,obj_ramp)
-{
-	if state != 6
-	{
-		state = 6
-		jumped = 0
-	}
-}
-if state != 2
-{
-	global.targetwidth = 960
-	global.targetheight = 540	
-	hitX = 0
-	hitY = 0
-}
 if global.collect < 0
 	global.collect = 0
-/*if state = 3
-{
-			with obj_camera
-			{
-				hud = 1
-				hudtime = 60
-				hudy = 6
-				hudspr = spr_foxHUD_hurt
-			}
-}*/
 if room = TitleReale
 {
 	state = 9999999999999999999999999	
@@ -140,7 +115,9 @@ if state != 12
 	frozenhit = 0
 if room = Hub or room = Title
 	global.collect = 0
-	
+
+global.drawhud = 1
+
 combosintime++
 if combosintime > 2700 //180 * 15, sin repeats at 180, with a 15x damper - wrapped to prevent overflow
 	combosin -= 2700
