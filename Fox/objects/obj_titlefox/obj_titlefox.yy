@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "foxTitleLmao",
+    "path": "sprites/foxTitleLmao/foxTitleLmao.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,7 +24,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":13,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -31,7 +33,7 @@
     "path": "folders/Objects/settings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pressenter",
+  "name": "obj_titleFox",
   "tags": [],
   "resourceType": "GMObject",
 }
