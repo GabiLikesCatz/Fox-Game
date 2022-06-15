@@ -9,4 +9,4 @@ if yplus <= -5
 draw_text(x,fakey,"New Game")
 draw_text(x,fakey + 30,"Options")
 draw_text(x,fakey + 60,"Exit")
-draw_sprite(sprite,-1,x + 100,fakey+(30*selected))
+draw_sprite(sprite,-1,x + 137.5,fakey+(30*selected))
