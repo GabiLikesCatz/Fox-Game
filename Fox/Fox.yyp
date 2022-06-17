@@ -250,6 +250,7 @@
     {"id":{"name":"bg_forest1","path":"sprites/bg_forest1/bg_forest1.yy",},"order":3,},
     {"id":{"name":"SewerB","path":"rooms/SewerB/SewerB.yy",},"order":2,},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"order":10,},
+    {"id":{"name":"mu_mansion","path":"sounds/mu_mansion/mu_mansion.yy",},"order":20,},
     {"id":{"name":"obj_parralax","path":"objects/obj_parralax/obj_parralax.yy",},"order":3,},
     {"id":{"name":"obj_baddie","path":"objects/obj_baddie/obj_baddie.yy",},"order":0,},
     {"id":{"name":"obj_hitstar","path":"objects/obj_hitstar/obj_hitstar.yy",},"order":9,},

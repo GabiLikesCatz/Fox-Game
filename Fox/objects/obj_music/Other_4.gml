@@ -5,7 +5,7 @@ if room = Hub or room = Hub2 or room = TitleReale or room = Title
 		music = mu_hub
 		audio_stop_all()
 	}
-	audio_sound_pitch(music,0.5)
+	audio_sound_pitch(music,1)
 }
 else if room = Forest_1 or room = Forest_2 or room = Forest_3 or room = Forest
 {
@@ -36,13 +36,13 @@ else if room = CityOLD or room = CityBOLD or room = City_1 or room = City_2 or r
 }
 else if room = Mansion_1 or room = Mansion_2 or room = Mansion_3 or room = Mansion_4
 {
-	if music != mu_haunted
+	if music != mu_mansion
 	{
-		music = mu_haunted
+		music = mu_mansion
 		audio_stop_all()
 	}
 	if room = Mansion_4
-		audio_sound_pitch(music,0.5)
+		audio_sound_pitch(music,0.75)
 	else
 		audio_sound_pitch(music,1)
 }
