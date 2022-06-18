@@ -1,6 +1,12 @@
+display_set_gui_size(960,540)
 if global.drawhud
 {
 	draw_set_font(collect_font)
+	/*draw_text(40,128,(string("HSP") + string(hsp)))
+	draw_text(40,160,(string("VSP") + string(vsp)))
+	draw_text(40,192,(string("MOVESPEED") + string(movespeed)))
+	draw_text(40,224,(string("IMAGE_INDEX") + string(floor(image_index))))
+	draw_text(40,256,(string("SPRITE_INDEX") + string(sprite_index)))*/
 	collectstring = (string("SCORE X ") + string(global.collect))
 	// collectstringw = string_width(collectstring)
 	draw_text(40, 32.5, collectstring)

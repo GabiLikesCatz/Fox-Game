@@ -55,6 +55,15 @@ else if room = Freezer_1 or room = Freezer_2 or room = Freezer or room = Freezer
 	}
 	audio_sound_pitch(music,1)
 }
+else if room = Space_1 or room = Space_2 or room = Space_3 or room = Space_4 or room = Space_5
+{
+	if music != mu_space
+	{
+		music = mu_space
+		audio_stop_all()
+	}
+	audio_sound_pitch(music,1)
+}
 else
 {
 	music = noone

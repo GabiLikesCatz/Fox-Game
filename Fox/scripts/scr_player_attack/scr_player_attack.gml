@@ -47,8 +47,14 @@ function scr_player_attack(){
 	hsp = movespeed * xscale
 	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
 	{
+		if floor(image_index) < 9
+		{
 		if movespeed < 10
 		movespeed += 0.25
+		}
+		else
+		if movespeed > 0
+			movespeed -= 0.1
 	}
 	else
 		movespeed = 10

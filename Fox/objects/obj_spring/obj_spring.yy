@@ -4,7 +4,7 @@
     "path": "sprites/placeholder32x32_pink/placeholder32x32_pink.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

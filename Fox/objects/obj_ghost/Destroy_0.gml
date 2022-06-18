@@ -1,4 +1,4 @@
-instance_create_depth((room_width - (room_width - (random_range(960,1240)))),(room_height - (room_height - (random_range(960,1240)))),depth,obj_ghost)
+/*instance_create_depth((room_width - (room_width - (random_range(960,1240)))),(room_height - (room_height - (random_range(960,1240)))),depth,obj_ghost)
 with instance_create_depth(x,y,depth,obj_baddieded)
 {
 	sprite_index = spr_ghost_dead
