@@ -1,6 +1,7 @@
+display_set_gui_size(960,540)
 draw_set_font(ComicSans)
 draw_text(920,500,fps)
-draw_set_font(ComicSans)
+/*draw_set_font(ComicSans)
 draw_text(800,500,zoom_level)
 hudy2 = 6 + (random_range(-4,4))
 if hud = 1

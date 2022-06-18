@@ -5,30 +5,24 @@ function scr_player_normal(){
 	image_speed = 0.35
 	else
 	image_speed = 0.35
-	hsp = movespeed * move
+	hsp = movespeed * xscale 
 	if vsp < 20
 		vsp += grav
 	if move != 0
 		xscale = move
 	if grounded
 	{
-		if move != 0
+		if hsp != 0
 		{
-			sprite_index = spr_player_walk
-			if movespeed < 6
-				movespeed += 0.5
-			if movespeed > 6
-				movespeed -= 0.5
-			if !instance_exists(obj_walkdust)
-			{
-				with instance_create_depth(x,y,depth+1,obj_walkdust)
+				if !instance_exists(obj_walkdust)
 				{
-					image_xscale = other.xscale
-					image_index = 0
+					with instance_create_depth(x,y,depth+1,obj_walkdust)
+					{
+						image_xscale = other.xscale
+						image_index = 0
+					}
 				}
-			}
-			if !audio_is_playing(sfx_walk)
-				sound(sfx_walk)
+				sprite_index = spr_player_walk
 		}
 		else
 		{
@@ -36,7 +30,28 @@ function scr_player_normal(){
 			sprite_index = spr_player_idle
 			else
 			sprite_index = spr_player_hurtidle
-			movespeed = 0
+		}
+	}
+	if grounded
+	{
+		if move != 0
+		{
+
+			if movespeed < 6
+				movespeed += 0.5
+			if movespeed > 6
+				movespeed -= 0.1
+
+			if !audio_is_playing(sfx_walk)
+				sound(sfx_walk)
+		}
+		else
+		{
+
+			if movespeed < 0
+				movespeed = 0
+			if movespeed > 0
+				movespeed -= 0.5
 		}
 		if (k_jump_press || jumpbuffer > 0)
 		{
@@ -69,6 +84,13 @@ function scr_player_normal(){
 		{
 			if movespeed < 6
 				movespeed += 0.25
+		}
+		else
+		{
+			/*if movespeed > 0
+				movespeed -= 0.25
+			if movespeed < 0*/
+				movespeed = 0
 		}
 	}
 	if k_attack
@@ -139,6 +161,12 @@ function scr_player_normal(){
 				vsp = -9
 		}
 		}
+	}
+	if !grounded and k_down
+	{
+		state = 7
+		image_index = 0
+		vsp = -4
 	}
 	/*if k_run and (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope))
 	{

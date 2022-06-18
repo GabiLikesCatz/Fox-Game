@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_spring",
-    "path": "sprites/spr_spring/spr_spring.yy",
+    "name": "placeholder32x32_pink",
+    "path": "sprites/placeholder32x32_pink/placeholder32x32_pink.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

@@ -1,12 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_player_attackhit(){
-	/*if global.hardmode = 0
-	sprite_index = spr_player_combo
-	else
-	sprite_index = spr_player_uppercut
-	global.targetwidth = 900
-	global.targetheight = 500*/
 	with obj_camera
 		zoom_level = clamp(zoom_level + (-1), 0.5, 2);
 	image_speed = 0

@@ -57,4 +57,8 @@ function scr_player_slide(){
 		state = 0
 		movespeed = 0
 	}
+	if grounded and k_jump_press
+	{
+		vsp = -11	
+	}
 }

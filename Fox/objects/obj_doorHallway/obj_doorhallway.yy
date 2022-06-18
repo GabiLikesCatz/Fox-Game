@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_dooropen",
-    "path": "sprites/spr_dooropen/spr_dooropen.yy",
+    "name": "spr_doorHallway",
+    "path": "sprites/spr_doorHallway/spr_doorHallway.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,8 +1,4 @@
 function scr_collide(){
-	//if !place_meeting(x + hsp,y - 5,obj_solid) && place_meeting(x + hsp,y,obj_solid)
-	//	while place_meeting(x + hsp,y,obj_solid)
-	//		y--
-	
 	if place_meeting(x + hsp,y,obj_solid)
 	{
 		while !place_meeting(x+sign(hsp),y,obj_solid)
