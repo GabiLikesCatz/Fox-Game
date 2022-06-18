@@ -69,7 +69,6 @@
     {"id":{"name":"Forest","path":"rooms/Forest/Forest.yy",},"order":0,},
     {"id":{"name":"spr_player_attack","path":"sprites/spr_player_attack/spr_player_attack.yy",},"order":0,},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":12,},
-    {"id":{"name":"obj_titleFox","path":"objects/obj_titleFox/obj_titleFox.yy",},"order":11,},
     {"id":{"name":"bg_sewer","path":"sprites/bg_sewer/bg_sewer.yy",},"order":9,},
     {"id":{"name":"spr_breakable","path":"sprites/spr_breakable/spr_breakable.yy",},"order":8,},
     {"id":{"name":"spr_slope2","path":"sprites/spr_slope2/spr_slope2.yy",},"order":11,},
