@@ -36,6 +36,7 @@
     {"id":{"name":"tile_sewer","path":"sprites/tile_sewer/tile_sewer.yy",},"order":8,},
     {"id":{"name":"obj_breakable","path":"objects/obj_breakable/obj_breakable.yy",},"order":7,},
     {"id":{"name":"bg_freezer","path":"sprites/bg_freezer/bg_freezer.yy",},"order":18,},
+    {"id":{"name":"mu_mansion","path":"sounds/mu_mansion/mu_mansion.yy",},"order":21,},
     {"id":{"name":"obj_speedlines","path":"objects/obj_speedlines/obj_speedlines.yy",},"order":10,},
     {"id":{"name":"placeholder100x100","path":"sprites/placeholder100x100/placeholder100x100.yy",},"order":10,},
     {"id":{"name":"spr_player_victory","path":"sprites/spr_player_victory/spr_player_victory.yy",},"order":21,},

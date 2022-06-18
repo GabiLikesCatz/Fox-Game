@@ -9,7 +9,7 @@ function scr_enemy_hitstun(){
 	{
 		if stunbuffer < 0
 		{
-			y -= 7
+			y -= 1
 			vsp = -14
 			movespeed = 12
 			image_xscale = obj_player.xscale
@@ -22,7 +22,7 @@ function scr_enemy_hitstun(){
 		{
 			/*image_xscale = obj_player.xscale
 			instance_destroy()*/
-			y -= 7
+			y -= 1
 			vsp = -14
 			movespeed = 12
 			image_xscale = obj_player.xscale
