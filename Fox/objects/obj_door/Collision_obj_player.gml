@@ -2,7 +2,7 @@ with obj_player
 {
 	if grounded
 	{
-		if k_up and global.haskey = 1 and state != 999999
+		if k_up and global.haskey = 1 and state != 999999 and state != 2
 		{
 			state = 999999
 			other.opened = 1
