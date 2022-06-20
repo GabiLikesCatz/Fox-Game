@@ -12,6 +12,7 @@
     {"id":{"name":"Template","path":"rooms/Template/Template.yy",},"order":9,},
     {"id":{"name":"spr_dog_hit","path":"sprites/spr_dog_hit/spr_dog_hit.yy",},"order":2,},
     {"id":{"name":"obj_levelendfadeout","path":"objects/obj_levelendfadeout/obj_levelendfadeout.yy",},"order":2,},
+    {"id":{"name":"lowpricesatchristmasinjuly","path":"sprites/lowpricesatchristmasinjuly/lowpricesatchristmasinjuly.yy",},"order":21,},
     {"id":{"name":"obj_walkdust","path":"objects/obj_walkdust/obj_walkdust.yy",},"order":6,},
     {"id":{"name":"SewerC","path":"rooms/SewerC/SewerC.yy",},"order":3,},
     {"id":{"name":"bg3","path":"sprites/bg3/bg3.yy",},"order":2,},
