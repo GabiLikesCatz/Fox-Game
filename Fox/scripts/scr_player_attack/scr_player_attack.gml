@@ -100,7 +100,10 @@ function scr_player_attack(){
 			movespeed += 0.1
 		else if sprite_index = spr_player_dashturn
 			movespeed -= 0.25
+		if sprite_index != spr_player_dashturn
 		hsp = xscale * movespeed
+		else
+		hsp = -xscale * movespeed
 		if movespeed < 0
 			movespeed = 0
 		if (!k_attack_down) and grounded

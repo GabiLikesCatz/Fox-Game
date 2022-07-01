@@ -165,8 +165,9 @@ function scr_player_normal(){
 		}
 		}
 	}
-	if grounded and k_attack_down and attackstyle = "DASH"
+	if grounded and k_attack_down// and attackstyle = "DASH"
 	{
+		sound(sfx_dash)
 			state = 1
 			image_index = 0
 			if !instance_exists(obj_dasheffect)
@@ -177,8 +178,25 @@ function scr_player_normal(){
 					image_index = 0
 				}
 			}
-			if attackstyle = "DASH"
-				movespeed = 0
+			attackstyle = "DASH"
+	}
+	if !grounded and k_attack
+	{
+		sound(sfx_dash)
+			state = 1
+			image_index = 0
+			airattack = 1
+			movespeed = 6
+			vsp = 0
+			if !instance_exists(obj_dasheffect)
+			{
+				with instance_create_depth(x,y,depth+1,obj_dasheffect)
+				{
+					image_xscale = other.xscale
+					image_index = 0
+				}
+			}	
+			attackstyle = "SHOULDERBASH"
 	}
 	if !grounded and k_down
 	{
