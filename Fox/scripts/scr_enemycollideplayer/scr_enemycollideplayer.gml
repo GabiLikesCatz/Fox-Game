@@ -59,9 +59,10 @@ function scr_enemycollideplayer(){
 			{
 			frames = 3
 			invframes = 20
-				vsp = -11
+				vsp = -17
 			//xscale *= -1
-			state = 3
+			state = 13
+			movespeed = 12
 			if !audio_is_playing(sfx_hurt)
 			sound(sfx_hurt)
 			if global.collect > 0
@@ -94,6 +95,8 @@ function scr_enemycollideplayer(){
 			image_index = random_range(0,3)
 			image_index = random_range(0,3)
 			chainsaw = 0
+			if global.combo > 0
+				combotime -= 15
 		}
 		sound(sfx_enemyhit)
 		sound(sfx_punch)

@@ -39,7 +39,7 @@ function scr_player_normal(){
 
 			if movespeed < 6
 				movespeed += 0.5
-			if movespeed > 6
+			if movespeed > 6 and move = 0
 				movespeed -= 0.1
 
 			if !audio_is_playing(sfx_walk)
@@ -93,7 +93,7 @@ function scr_player_normal(){
 				movespeed = 0
 		}
 	}
-	if k_attack
+	if k_attack and attackstyle != "DASH"
 	{
 		sound(sfx_dash)
 		if attackstyle = "OLD"
@@ -124,6 +124,7 @@ function scr_player_normal(){
 			state = 1
 			image_index = 0
 			airattack = 0
+			if attackstyle != "DASH"
 			movespeed = 6
 			if !instance_exists(obj_dasheffect)
 			{
@@ -133,8 +134,10 @@ function scr_player_normal(){
 					image_index = 0
 				}
 			}
+			if attackstyle = "DASH"
+				movespeed = -1
 		}
-		else
+		else if attackstyle != "DASH"
 		{
 			state = 1
 			image_index = 0
@@ -161,6 +164,21 @@ function scr_player_normal(){
 				vsp = -9
 		}
 		}
+	}
+	if grounded and k_attack_down and attackstyle = "DASH"
+	{
+			state = 1
+			image_index = 0
+			if !instance_exists(obj_dasheffect)
+			{
+				with instance_create_depth(x,y,depth+1,obj_dasheffect)
+				{
+					image_xscale = other.xscale
+					image_index = 0
+				}
+			}
+			if attackstyle = "DASH"
+				movespeed = 0
 	}
 	if !grounded and k_down
 	{

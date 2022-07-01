@@ -40,7 +40,7 @@ function scr_player_attack(){
 		if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and ( sprite_index = spr_player_attackair or  sprite_index = spr_player_attackairprep)
 			state = 0
 	}
-	else
+	else if attackstyle = "SHOULDERBASH"
 	{
 	sprite_index = spr_player_shoulderbash
 	image_speed = 0.35
@@ -49,7 +49,7 @@ function scr_player_attack(){
 	{
 		if floor(image_index) < 9
 		{
-		if movespeed < 10
+		if movespeed < 12
 		movespeed += 0.25
 		}
 		else
@@ -89,6 +89,54 @@ function scr_player_attack(){
 				instance_create_depth(x,y,depth,obj_hitstar)
 				instance_create_depth(x,y,depth,obj_hiteffect)
 	}
+	}
+	else
+	{
+		if vsp < 20
+			vsp += grav
+		if sprite_index != spr_player_dashturn
+			image_speed = 0.35
+		if movespeed < 12 and sprite_index != spr_player_dashturn
+			movespeed += 0.1
+		else if sprite_index = spr_player_dashturn
+			movespeed -= 0.25
+		hsp = xscale * movespeed
+		if movespeed < 0
+			movespeed = 0
+		if (!k_attack_down) and grounded
+			state = 0
+		if sprite_index != spr_player_dash and sprite_index != spr_player_dashturn
+			sprite_index = spr_player_dash
+		if sprite_index != spr_player_dashturn and move = -xscale
+		{
+			xscale *= -1
+			movespeed -= 1
+			sprite_index = spr_player_dashturn
+			image_index = 0
+		}
+		if sprite_index = spr_player_dashturn and floor(image_index) = image_number - 1
+		{
+			if grounded
+				sprite_index = spr_player_dash
+			else
+				image_speed = 0
+		}
+		if k_jump_press and grounded
+		{
+			vsp = -10.5
+			sound(sfx_jump)
+		}
+		if place_meeting(x+xscale,y,obj_solid)
+		{
+			state = 3
+			vsp = -5
+			movespeed = movespeed / 2
+			image_index = 0
+			sound(sfx_bump)
+				repeat 6
+					instance_create_depth(x,y,depth,obj_hitstar)
+					instance_create_depth(x,y,depth,obj_hiteffect)
+		}
 	}
 	/*if (!place_meeting(x,y+1,obj_solid) and !place_meeting(x,y+1,obj_slope))
 	{

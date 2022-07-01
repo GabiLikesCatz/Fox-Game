@@ -1,6 +1,6 @@
 if keyboard_check_pressed(vk_escape)
 	game_end()
-if keyboard_check_pressed(vk_return)
+if keyboard_check_pressed(vk_return) and room != Editor and room != PlayLevel
 {
 	if room != TitleReale
 	{

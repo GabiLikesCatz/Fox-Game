@@ -49,16 +49,33 @@ switch state
 	case 12:
 		scr_player_frozen()
 	break
+	case 13:
+		scr_player_hurt()
+	break
 }
 if state != 3
 invframes -= 0.25
 frames -= 0.1
-if state != 999999 and state != 2 and state != 8
-	scr_collide()
 if state != 10
 	mask_index = spr_player_mask
 else
 	mask_index = spr_player_masksmol
+/*if place_meeting(x,y,obj_solid)
+{
+	state = 10
+	movespeed = 10
+	vsp = 0
+}*/
+if state != 999999 and state != 2 and state != 8 and state != 9999999999999999999999999999999999999999999999999999
+	scr_collide()
+/*if state != 10
+	mask_index = spr_player_mask
+else
+	mask_index = spr_player_masksmol*/
+if room = Editor
+	state = 9999999999999999999999999999999999999999999999999999
+else if state = 9999999999999999999999999999999999999999999999999999
+	state = 0
 if place_meeting(x, y, obj_solid) and state != 2
 {
 	state = 10

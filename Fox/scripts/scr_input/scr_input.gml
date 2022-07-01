@@ -10,4 +10,5 @@ function scr_input(){
 	k_up2 = keyboard_check_pressed(vk_up)
 	k_down = keyboard_check_pressed(vk_down)
 	k_run = keyboard_check(vk_shift)
+	k_attack_down = keyboard_check(ord("X"))
 }
