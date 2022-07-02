@@ -17,6 +17,7 @@ function scr_player_attackhit(){
 		//{
 		if attackstyle != "OLD"
 		{
+			image_speed = storedimgspeed
 			/*state = 3
 			vsp = -5
 			movespeed = movespeed / 2*/

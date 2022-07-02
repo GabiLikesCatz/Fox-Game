@@ -5,11 +5,12 @@ function scr_enemycollideplayer(){
 	{
 		hitX = x
 		hitY = y
-		stunbuffer = 11
+		stunbuffer = 7
 		state = 2
 		with obj_player
 		{
 			storedstate = state
+			storedimgspeed = image_speed
 			if state != 9
 			{
 			hitX = x
@@ -50,6 +51,7 @@ function scr_enemycollideplayer(){
 		}
 		instance_create_depth(x,y,depth+1,obj_hiteffect)
 		sound(sfx_enemyhit)
+		image_yscale -= 0.7
 	}
 	if (place_meeting(x,y,obj_player) and obj_player.state != 1 and obj_player.state != 2 and obj_player.state != 3 and obj_player.state != 5 and obj_player.state != 9 and obj_player.state != 11 and obj_player.state != 10) and (state = 0 or state = 4)
 	{

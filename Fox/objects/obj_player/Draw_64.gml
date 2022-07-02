@@ -1,6 +1,9 @@
 display_set_gui_size(960,540)
 if global.drawhud
 {
+	if global.haskey
+		draw_sprite_ext(spr_key,-1,500,32,1,image_yscale,image_angle,image_blend,0.9)
+	draw_sprite_ext(spr_keySlot,-1,500,32,1,image_yscale,image_angle,image_blend,0.7)
 	draw_set_font(collect_font)
 	/*draw_text(40,128,(string("HSP") + string(hsp)))
 	draw_text(40,160,(string("VSP") + string(vsp)))

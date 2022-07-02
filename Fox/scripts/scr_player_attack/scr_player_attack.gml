@@ -94,8 +94,7 @@ function scr_player_attack(){
 	{
 		if vsp < 20
 			vsp += grav
-		if sprite_index != spr_player_dashturn
-			image_speed = 0.35
+		image_speed = 0.35
 		if movespeed < 12 and sprite_index != spr_player_dashturn
 			movespeed += 0.25
 		else if sprite_index = spr_player_dashturn
@@ -140,6 +139,8 @@ function scr_player_attack(){
 					instance_create_depth(x,y,depth,obj_hitstar)
 					instance_create_depth(x,y,depth,obj_hiteffect)
 		}
+		if movespeed = 12
+			instance_create_unique(x + (32 * -xscale),y,obj_dasheffect)
 	}
 	/*if (!place_meeting(x,y+1,obj_solid) and !place_meeting(x,y+1,obj_slope))
 	{

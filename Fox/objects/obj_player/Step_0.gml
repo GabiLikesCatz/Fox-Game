@@ -1,4 +1,4 @@
-scr_input()
+ scr_input()
 move = k_left + k_right
 depth = -999
 switch state
@@ -150,3 +150,7 @@ if keyboard_check(ord("J")) and keyboard_check(ord("O"))
 	jojo = 1
 time++
 bobsin = sin(time / 7) * bobintensity
+if global.combo > 0
+	instance_create_unique(x,y,obj_coinget)
+if global.combo = 0
+	instance_destroy(obj_coinget)
