@@ -97,7 +97,7 @@ function scr_player_attack(){
 		if sprite_index != spr_player_dashturn
 			image_speed = 0.35
 		if movespeed < 12 and sprite_index != spr_player_dashturn
-			movespeed += 0.1
+			movespeed += 0.25
 		else if sprite_index = spr_player_dashturn
 			movespeed -= 0.25
 		if sprite_index != spr_player_dashturn
@@ -106,7 +106,7 @@ function scr_player_attack(){
 		hsp = -xscale * movespeed
 		if movespeed < 0
 			movespeed = 0
-		if (!k_attack_down) and grounded
+		if (!k_attack_down) and grounded and movespeed >= 10
 			state = 0
 		if sprite_index != spr_player_dash and sprite_index != spr_player_dashturn
 			sprite_index = spr_player_dash
