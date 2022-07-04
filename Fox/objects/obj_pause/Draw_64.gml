@@ -10,4 +10,8 @@ if paused
 	draw_text(480,330,"Restart")
 	draw_text(480,360,"Exit")
 	draw_sprite(sprite,-1,380,300+(30*selected))
+	audio_stop_all()
+	instance_deactivate_all(true)
 }
+else
+	instance_activate_all()

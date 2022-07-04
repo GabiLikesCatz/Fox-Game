@@ -165,7 +165,7 @@ function scr_player_normal(){
 		}
 		}
 	}
-	if grounded and k_attack_down// and attackstyle = "DASH"
+	/*if grounded and k_attack_down// and attackstyle = "DASH"
 	{
 		sound(sfx_dash)
 			state = 1
@@ -197,7 +197,7 @@ function scr_player_normal(){
 				}
 			}	
 			attackstyle = "SHOULDERBASH"
-	}
+	}*/
 	if !grounded and k_down
 	{
 		state = 7

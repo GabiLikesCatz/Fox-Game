@@ -4,14 +4,14 @@ function scr_player_attack(){
 	rgb = make_color_rgb(150,150,255)
 	if !audio_is_playing(sfx_walk)
 		sound(sfx_walk)
-	if !audio_is_playing(sfx_dashing)
+	if !audio_is_playing(sfx_dashing) and attackstyle != "OLD"
 		sound(sfx_dashing)
 	if !instance_exists(obj_speedlines)
 		instance_create_depth(x,y,depth,obj_speedlines)
 	/*if !instance_exists(obj_dasheffect)
 		with instance_create_depth(x,y,depth - 1,obj_dasheffect)
 			image_xscale = other.xscale*/
-	if place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)
+	if grounded
 	{
 	if !instance_exists(obj_walkdust)
 	{
@@ -24,7 +24,7 @@ function scr_player_attack(){
 	}
 	if attackstyle = "OLD"
 	{
-		image_speed = 0.20
+		image_speed = 0.35
 		hsp = movespeed * xscale
 		//sprite_index = spr_player_attack
 		movespeed = 8
@@ -32,12 +32,12 @@ function scr_player_attack(){
 			vsp += grav
 		if floor(image_index) = image_number - 1 and sprite_index = spr_player_attack
 			state = 0
-		if floor(image_index) = image_number - 1 and sprite_index = spr_player_attackairprep
+		if (floor(image_index) = image_number - 1 and sprite_index = spr_player_attackairprep) or (!grounded and sprite_index != spr_player_attackair and sprite_index != spr_player_attackairprep)
 		{
 			sprite_index = spr_player_attackair
 			image_index = 0
 		}
-		if (place_meeting(x,y+1,obj_solid) or place_meeting(x,y+1,obj_slope)) and ( sprite_index = spr_player_attackair or  sprite_index = spr_player_attackairprep)
+		if (grounded) and ( sprite_index = spr_player_attackair or  sprite_index = spr_player_attackairprep)
 			state = 0
 	}
 	else if attackstyle = "SHOULDERBASH"

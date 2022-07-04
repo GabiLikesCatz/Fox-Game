@@ -8,7 +8,7 @@ if keyboard_check_pressed(vk_return) and room != Editor and room != PlayLevel
     {
         paused = (!paused)
         selected = 0
-    }
+  }
     else if (selected == 1 && paused)
     {
         room_restart()

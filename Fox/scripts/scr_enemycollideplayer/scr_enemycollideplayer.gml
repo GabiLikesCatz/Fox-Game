@@ -15,7 +15,7 @@ function scr_enemycollideplayer(){
 			{
 			hitX = x
 			hitY = y
-			hitbuffer = 11
+			hitbuffer = 7
 			state = 2
 			baddieid = other.id
 			//camera_set_view_size(view_camera[0],900,500)
