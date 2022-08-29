@@ -46,11 +46,11 @@ else if room = Mansion_1 or room = Mansion_2 or room = Mansion_3 or room = Mansi
 	else
 		audio_sound_pitch(music,1)
 }
-else if room = Freezer_1 or room = Freezer_2 or room = Freezer or room = Freezer22
+else if room = Freezer_1 or room = Freezer_2 or room = Freezer or room = Freezer_3
 {
-	if music != mu_forest
+	if music != mu_freezer
 	{
-		music = mu_forest
+		music = mu_freezer
 		audio_stop_all()
 	}
 	audio_sound_pitch(music,1)

@@ -5,7 +5,9 @@ with obj_player
 		if k_up and global.haskey = 1 and state != 999999 and state != 2
 		{
 			if instance_exists(obj_coinget)
+			{
 			instance_destroy(obj_coinget)
+			}
 			state = 999999
 			other.opened = 1
 			other.alarm[0] = 60
